@@ -1,74 +1,8 @@
 ﻿from playsound import playsound
+import Services.Path as path
 
-def naosei():
-    playsound('E:/pytom/Game/audio/naosei.mp3')
-
-def naoseiii():
-    playsound('E:/pytom/Game/audio/naoseiii.mp3')
-
-def queropova():
-    playsound('E:/pytom/Game/audio/queropova.mp3')
-
-def aaa():
-    playsound('E:/pytom/Game/audio/aaa.mp3')
-
-def cafe():
-    playsound('E:/pytom/Game/audio/cafe.mp3')
-
-def pede():
-    playsound('E:/pytom/Game/audio/pede.mp3')
-
-def souseupai():
-    playsound('E:/pytom/Game/audio/souseupai.mp3')
-
-def tenho():
-    playsound('E:/pytom/Game/audio/tenho.mp3')
-
-def trolei():
-    playsound('E:/pytom/Game/audio/trolei.mp3')
-
-def cagao():
-    playsound('E:/pytom/Game/audio/cagao.mp3')
-
-def hora1():
-    playsound('E:/pytom/Game/audio/1.mp3')
-
-def hora2():
-    playsound('E:/pytom/Game/audio/2.mp3')
-
-def hora3():
-    playsound('E:/pytom/Game/audio/3.mp3')
-
-def a2000():
-    playsound('E:/pytom/Game/audio/2000.mp3')
-
-
-def vinho():
-    playsound('E:/pytom/Game/audio/vinho.mp3')
-
-def caveira():
-    playsound('E:/pytom/Game/audio/caveira.mp3')
-
-def pega():
-    playsound('E:/pytom/Game/audio/pega.mp3')
-
-def come():
-    playsound('E:/pytom/Game/audio/come.mp3')
-
-def PegaLadrao():
-    playsound('E:/pytom/Game/audio/PegaLadrao.mp3')
-
-def mil82():
-    playsound('E:/pytom/Game/audio/mil8.mp3')
-
-def mil8():
-    playsound('E:/pytom/Game/audio/mil8.mp3')
-
-def ha():
-    playsound('E:/pytom/Game/audio/ha.mp3')
-
-def contos():
-    playsound('E:/pytom/Game/audio/contos.mp3')
+def Play(dir):
+    playsound(path.GetPath(dir))
 
 print('\033[0;32mBem vindo ao gameme\033[m')
 nome = input('\033[4;33mDigite o nome: \033[m')
@@ -89,11 +23,11 @@ if o == 1:
     o1 = int(input('\033[4;33mOque voce faz\n 1 vai embora e deixa a pessoa para la\n 2 vai ver se ela esta viva\n digite: \033[m'))
     if o1 == 1:
         print('\033[7m{} {} ouviu o grito\033[m'.format(G, nome))
-        souseupai()
+        Play("souseupai.mp3")
         o111 = int(input('\033[4;33mOque voce faz\n 1 volta e para onde esta a pessoa\n 2 vai embora\n digite: \033[m'))
         if o111 == 1:
             print('\033[7mFim de jogo\n {} foi trolado\033[m'.format(nome))
-            trolei()
+            Play("trolei.mp3")
         else:
             print('\033[7mFim de jogo\n {} não foi trolado\033[m'.format(nome))
     else:
@@ -101,36 +35,36 @@ if o == 1:
         o12 = int(input('\033[4;33mOque voce faz\n 1 pergunta se ele esta bem\n 2 rouba a carteira dele enquanto ele esta zonzo\n digite: \033[m'))
         if o12 == 1:
             print('\033[7m{} {} pergunta se esta bem e ele responde\n\033[m'.format(G, nome))
-            aaa()
+            Play("aaa.mp3")
             print('\033[7m{} {} liga para a ambulancia mas esta sem sinal\n\033[m'.format(G, nome))
             o121 = int(input('\033[4;33mVoce tem duas alternativas\n 1 colocar o cara dentro do seu carro\n 2 tirar ele do meio da estrada e colocar na calsada \n digite: \033[m'))
             if o121 == 1:
                 print('\033[7m Na hora que {} {} foi colocar o cara no carro ele gritou\n\033[m'.format(G, nome))
-                pede()
+                Play("pede.mp3")
                 print('\033[7m{} {} então percebe que ele esta alterado\n\033[m'.format(G, nome))
                 o1212 = int(input('\033[4;33mVoce faz oque\n 1 tenta conversar com ele\n 2 foje de la \n digite: \033[m'))
                 if o1212 == 1:
                     print('\033[7m{} {} pergunta qual e o nome dele\n e veio a resposta\n\033[m'.format(G, nome))
-                    naosei()
+                    Play("naosei.mp3")
                     print('\033[7mdigite qualquer coisa para continuar\033[m')
                     input("")
                     print('\033[7m{} {} pergunta se ele sabia oque aconteceu\n e veio a resposta\n\033[m'.format(G, nome))
-                    naosei()
+                    Play("naosei.mp3")
                     print('\033[7mdigite qualquer coisa para continuar\033[m')
                     input("")
                     print('\033[7m{} {} pergunta se estava de carro\n e veio a resposta\n\033[m'.format(G, nome))
-                    naoseiii()
+                    Play("naoseiii.mp3")
                     print('\033[7mdigite qualquer coisa para continuar\033[m')
                     input("")
                     print('\033[7m{} {} então sente um cheiro de alcool e fala voce esta empreagado\n e veio a resposta\n\033[m'.format(G, nome))
-                    queropova()
+                    Play("queropova.mp3")
                     print('\033[7mdigite qualquer coisa para continuar\033[m')
                     input("")
                     print('\033[7mA pessoa se altera e parte para cima do {} e acaba ficando inconciete\n\033[m'.format(nome))
                     print('\033[7mFim de jogo\n voce não deve falar que a pessoa esta empreagada\033[m')
                 else:
                     print('\033[7mFim de jogo\n\033[m')
-                    cagao()
+                    Play("cagao.mp3")
             else:
                 print('\033[7m Na hora que {} {} foi colocar o cara no lugar seguro\n\033[m'.format(G, nome))
                 pede()
@@ -150,17 +84,17 @@ if o == 1:
                     print('\033[7mdigite qualquer coisa para continuar\033[m')
                     input("")
                     print('\033[7m{} {} então sente um cheiro de alcool e fala voce esta empreagado\n e veio a resposta\n\033[m'.format(G, nome))
-                    queropova()
+                    Play("queropova.mp3")
                     print('\033[7mdigite qualquer coisa para continuar\033[m')
                     input("")
                     print('\033[7mA pessoa se altera e parte para cima do {} e acaba ficando inconciete\n\033[m'.format(nome))
                     print('\033[7mFim de jogo\n voce não deve falar que a pessoa esta empreagada\033[m')
                 else:
                     print('\033[7mFim de jogo\n\033[m')
-                    cagao()
+                    Play("cagao.mp3")
         else:
             print('\033[7m{} {} pega a carteira mas ouve um grito\n\033[m'.format(G, nome))
-            PegaLadrao()
+            Play("PegaLadrao.mp3")
             print('\033[7mdigite qualquer coisa para continuar\033[m')
             input("")
             print('\033[7mna hora vem varios policias\nconclusão voce e preso por roubo\nfim de jogo\033[m')
@@ -172,32 +106,32 @@ elif o == 2:
         o21 = int(input('\033[4;33mOque voce faz\n 1 corre o mais rapido que puder\n 2 entrega o dinheiro\n 3 grita para chamar a atenção dos quardas\n digite: \033[m'))
         if o21 == 1:
             print('\033[7m{} {} tentou fugir mas não conseguiu e acabou sendo atingido pela bala do ladrão que levou o dinheiro\nfim de jogo\n\033[m'.format(G, nome))
-            pega()
+            Play("pega.mp3")
         elif o21 == 2:
             print('\033[7m{} {} entrga o dinheiro pro ladrão so que ele te mata mesmo assim\nfim de jogo\n\033[m'.format(G, nome))
-            come()
+            Play("come.mp3")
         else:
             print('\033[7m{} {} grita\n\033[m'.format(G, nome))
-            PegaLadrao()
+            Play("PegaLadrao.mp3")
             print('\033[7mdigite qualquer coisa para continuar\033[m')
             input("")
             print('\033[7mos guardas escutam e pegam o ladrão\n{} resebe uma recompença no valor de \nfim de jogo\033[m'.format(nome))
-            mil8()
+            Play("mil8.mp3")
     else:
         print('\033[7m{} {} esperou\n\033[m'.format(G, nome))
-        hora1()
+        Play("1.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7m{} {} esperou!\n\033[m'.format(G, nome))
-        hora2()
+        Play("2.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7m{} {} esperou!!!!\n\033[m'.format(G, nome))
-        hora3()
+        Play("3.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7m{} {} esperou!!!!!!\n\033[m'.format(G, nome))
-        a2000()
+        Play("2000.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7mate que morreu de exastão\n\033[m'.format(nome))
@@ -257,36 +191,36 @@ elif o == 2:
                         █░░ █▄▄█ ░█▄█░ █▀▀ ▀█▀ █▄▄▀ █▄▄█
                         ▀▀▀ ▀░░▀ ░░▀░░ ▀▀▀ ▀▀▀ ▀░▀▀ ▀░░▀
         \033[m""")
-        caveira()
+        Play("caveira.mp3")
 else:
     print('\033[7m{} {} ve a chegada de um clinte que não parece ter muito dinheiro\033[m'.format(G, nome))
     o3 = int(input('\033[4;33mOque voce faz\n 1 leva ele para uma mesa distante\n 2 coloca ele numa mesa com janela\n digite: \033[m'))
     if o3 == 1:
         print('\033[7m{} {} coloca ele na mesa distante e pergunta\no que voce quer para comer?\nele responde\033[m'.format(G, nome))
-        vinho()
+        Play("vinho.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7m{} {} fica surpreso com o pedido mas anota mesmo assim\ndepois chega com o pedido\ndepois de comer voce fala quanto que custou\033[m'.format(G, nome))
-        mil82()
+        Play("mil8.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7m{} {} fica mas surpreso ainda quando ele retira do seu boço um cartão e fala\033[m'.format(G,nome))
         print("""\033[0;31;44m█▀▀▄ █▀▀█   █▀▀ █▀▀█ █▀▀ █▀▀▄ ░▀░ ▀▀█▀▀ █▀▀█   █▀▀█ █▀▀█ █▀▀█   █▀▀ █▀▀█ ▀█░█▀ █▀▀█ █▀▀█\033[m
 \033[0;31;44m█░░█ █░░█   █░░ █▄▄▀ █▀▀ █░░█ ▀█▀ ░░█░░ █░░█   █░░█ █░░█ █▄▄▀   █▀▀ █▄▄█ ░█▄█░ █░░█ █▄▄▀\033[m
 \033[0;31;44m▀░░▀ ▀▀▀▀   ▀▀▀ ▀░▀▀ ▀▀▀ ▀▀▀░ ▀▀▀ ░░▀░░ ▀▀▀▀   █▀▀▀ ▀▀▀▀ ▀░▀▀   ▀░░ ▀░░▀ ░░▀░░ ▀▀▀▀ ▀░▀▀\033[m""")
-        ha()
+        Play("ha.mp3")
     else:
         print('\033[7m{} {} coloca ele na mesa com vista pela janela e pergunta\no que voce quer para comer?\nele responde\033[m'.format(G, nome))
-        queropova()
+        Play("queropova.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7m{} {} perqunta\nalgo para beber?\nele responde\033[m'.format(G, nome))
-        cafe()
+        Play("cafe.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7mdepois dele ter se alimntando {} {} fala o valor da refeição\033[m'.format(G, nome))
-        mil82()
+        Play("mil8.mp3")
         print('\033[7mdigite qualquer coisa para continuar\033[m')
         input("")
         print('\033[7me ele responde so tenho\033[m')
-        contos()
+        Play("contos.mp3")
