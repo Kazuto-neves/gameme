@@ -1,178 +1,137 @@
+from time import sleep
+
 import pygame
+
+from audio_player import AudioPlayer
+
+audio_player = AudioPlayer(library="pygame")
 
 
 def naosei():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/naosei.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('naosei.mp3')
 
 
 def naoseiii():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/naoseiii.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('naoseiii.mp3')
+
 
 
 def queropova():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/queropova.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('queropova.mp3')
+
 
 
 def aaa():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/aaa.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('aaa.mp3')
+
 
 
 def cafe():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/cafe.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('cafe.mp3')
+
 
 
 def pede():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/pede.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('pede.mp3')
+
 
 
 def souseupai():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/souseupai.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('souseupai.mp3')
+
 
 
 def tenho():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/tenho.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    audio_player.play('tenho.mp3')
+
 
 
 def trolei():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/trolei.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    play_audio_and_wait('trolei.mp3')
+
 
 
 def cagao():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/cagao.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    audio_player.play('cagao.mp3')
+
 
 
 def hora1():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/1.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('1.mp3')
+
 
 
 def hora2():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/2.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('2.mp3')
+
 
 
 def hora3():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/3.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('3.mp3')
+
 
 
 def a2000():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/2000.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('2000.mp3')
+
 
 
 def vinho():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/vinho.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('vinho.mp3')
+
+
 
 def caveira():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/caveira.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    play_audio_and_wait('caveira.mp3')
+
 
 
 def pega():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/pega.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    audio_player.play('pega.mp3')
+
 
 
 def come():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/come.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    audio_player.play('come.mp3')
+
 
 
 def PegaLadrao():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/PegaLadrao.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('PegaLadrao.mp3')
+
 
 
 def mil82():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/mil8.mp3')
-    pygame.mixer.music.play()
+    audio_player.play('mil8.mp3')
 
 
 
 def mil8():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/mil8.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    play_audio_and_wait('mil8.mp3')
+
+
 
 def ha():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/ha.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    audio_player.play('ha.mp3')
+
 
 
 def contos():
-    pygame.mixer.init()
-    pygame.init()
-    pygame.mixer.music.load('E:/pytom/Game/audio/contos.mp3')
-    pygame.mixer.music.play()
-    pygame.event.wait()
+    play_audio_and_wait('contos.mp3')
+
+
+
+def play_audio_and_wait(filename):
+    audio_player.play(filename)
+    if audio_player.library == "pygame":
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
 
 
 print('\033[0;32mBem vindo ao gameme\033[m')
 nome = input('\033[4;33mDigite o nome: \033[m')
 S = input('\033[4;33mDigite o seu genero\n M para Homen\n F para mulher\n O outros\n Digite: \033[m')
+# Garantir que a variável G seja definida antes de ser usada em todas as situações
 if S == "M":
     G = 'O'
     E = 'ele'
@@ -182,6 +141,9 @@ elif S == "F":
 elif S == "O":
     G = 'E'
     E = 'ele(a)'
+else:
+    G = 'O'
+    E = 'ele'  # Valores padrão caso S não seja válido
 print('\033[0;32mMuito bem {}\033[m\n'.format(nome))
 o = int(input('\033[4;33mQual situação voce quer ver\n 1 voce encontrou uma pessoa no meio da estrada\n 2 voce esta numa fila de um banco\n 3 voce e um resepicionista/garçom de um restalrante\n digite: \033[m'))
 if o == 1:
@@ -268,7 +230,7 @@ elif o == 2:
     print('\033[7m{} {} esta querendo pegar o seu dinheiro na sua caderneta de polpança mas ve que a fila esta muito longa\033[m'.format(G, nome))
     o2 = int(input('\033[4;33mOque voce faz\n 1 vai fazer outra coisa e voltar mas tarde\n 2 vai esperar na fila\n digite: \033[m'))
     if o2 == 1:
-        print('\033[7m{} {} voltou mas tarde e viu que a fila tinha diminuido então {} foi para a fila\nmas {} não esperava que isso ia acontecer\num ladrão estava esperando\nassim que {} saiu o ladrão ja veio falando passa tudo\n\033[m'.format(G, nome, E))
+        print('\033[7m{} {} voltou mas tarde e viu que a fila tinha diminuido então {} foi para a fila\nmas {} não esperava que isso ia acontecer\num ladrão estava esperando\nassim que {} saiu o ladrão ja veio falando passa tudo\n\033[m'.format(G, nome, G, nome, nome))
         o21 = int(input('\033[4;33mOque voce faz\n 1 corre o mais rapido que puder\n 2 entrega o dinheiro\n 3 grita para chamar a atenção dos quardas\n digite: \033[m'))
         if o21 == 1:
             print('\033[7m{} {} tentou fugir mas não conseguiu e acabou sendo atingido pela bala do ladrão que levou o dinheiro\nfim de jogo\n\033[m'.format(G, nome))
