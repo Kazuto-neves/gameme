@@ -1,5 +1,3 @@
-from time import sleep
-
 import pygame
 
 from audio_player import AudioPlayer
