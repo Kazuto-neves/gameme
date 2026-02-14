@@ -85,12 +85,12 @@ def caveira():
 
 
 def pega():
-    audio_player.play('pega.mp3')
+    play_audio_and_wait('pega.mp3')
 
 
 
 def come():
-    audio_player.play('come.mp3')
+    play_audio_and_wait('come.mp3')
 
 
 
