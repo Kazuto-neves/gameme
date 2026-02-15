@@ -11,7 +11,7 @@ class AudioPlayer:
             self.audio_dir = os.path.join(sys._MEIPASS, "audio")
         else:
             # Running in normal Python environment
-            self.audio_dir = os.path.join(os.path.dirname(__file__), "audio")
+            self.audio_dir = os.path.join(os.path.dirname(__file__), "../audio")
         if self.library == "pygame":
             pygame.mixer.init()
 
@@ -20,6 +20,8 @@ class AudioPlayer:
         if self.library == "pygame":
             pygame.mixer.music.load(filepath)
             pygame.mixer.music.play()
+            while pygame.mixer.music.get_busy():
+                pygame.time.Clock().tick(10)
         elif self.library == "playsound":
             playsound(filepath)
         else:
