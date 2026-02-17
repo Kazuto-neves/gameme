@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823de3a8-467d-4817-afab-4e7fbdf76d09" name="Changes" comment="Update project configuration files and add requirements for dependencies">
-      <change afterPath="$PROJECT_DIR$/Game/Stories/Story1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Stories/Story2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Stories/Story3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Ultils/main_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Ultils/Library_Text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/RunnerGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/RunnerGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Stories/Story1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Stories/Story1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
