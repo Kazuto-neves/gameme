@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823de3a8-467d-4817-afab-4e7fbdf76d09" name="Changes" comment="Update project configuration files and add requirements for dependencies">
-      <change afterPath="$PROJECT_DIR$/Game/Ultils/Library_Text.py" afterDir="false" />
+    <list default="true" id="823de3a8-467d-4817-afab-4e7fbdf76d09" name="Changes" comment="Add Library_Text module and integrate story texts into Story1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Stories/Story1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Stories/Story1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Stories/Story2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Stories/Story2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Stories/Story3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Stories/Story3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Ultils/Library_Text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Ultils/Library_Text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1771166558307</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Library_Text module and integrate story texts into Story1">
+      <option name="closed" value="true" />
+      <created>1771336913308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771336913308</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project configuration files and add requirements for dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project configuration files and add requirements for dependencies" />
+    <MESSAGE value="Add Library_Text module and integrate story texts into Story1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Library_Text module and integrate story texts into Story1" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
