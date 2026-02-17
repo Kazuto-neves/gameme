@@ -1,0 +1,32 @@
+def Story(audio_player, nome, Sujeito):
+        print('\033[7m{} {} ve a chegada de um clinte que não parece ter muito dinheiro\033[m'.format(G, nome))
+        o3 = int(input('\033[4;33mOque voce faz\n 1 leva ele para uma mesa distante\n 2 coloca ele numa mesa com janela\n digite: \033[m'))
+        if o3 == 1:
+            print('\033[7m{} {} coloca ele na mesa distante e pergunta\no que voce quer para comer?\nele responde\033[m'.format(Sujeito, nome))
+            audio_player.play('vinho.mp3')
+            print('\033[7mdigite qualquer coisa para continuar\033[m')
+            input("")
+            print('\033[7m{} {} fica surpreso com o pedido mas anota mesmo assim\ndepois chega com o pedido\ndepois de comer voce fala quanto que custou\033[m'.format(Sujeito, nome))
+            audio_player.play('mil8.mp3')
+            print('\033[7mdigite qualquer coisa para continuar\033[m')
+            input("")
+            print('\033[7m{} {} fica mas surpreso ainda quando ele retira do seu boço um cartão e fala\033[m'.format(Sujeito,nome))
+            print("""\033[0;31;44m█▀▀▄ █▀▀█   █▀▀ █▀▀█ █▀▀ █▀▀▄ ░▀░ ▀▀█▀▀ █▀▀█   █▀▀█ █▀▀█ █▀▀█   █▀▀ █▀▀█ ▀█░█▀ █▀▀█ █▀▀█\033[m
+    \033[0;31;44m█░░█ █░░█   █░░ █▄▄▀ █▀▀ █░░█ ▀█▀ ░░█░░ █░░█   █░░█ █░░█ █▄▄▀   █▀▀ █▄▄█ ░█▄█░ █░░█ █▄▄▀\033[m
+    \033[0;31;44m▀░░▀ ▀▀▀▀   ▀▀▀ ▀░▀▀ ▀▀▀ ▀▀▀░ ▀▀▀ ░░▀░░ ▀▀▀▀   █▀▀▀ ▀▀▀▀ ▀░▀▀   ▀░░ ▀░░▀ ░░▀░░ ▀▀▀▀ ▀░▀▀\033[m""")
+            audio_player.play('ha.mp3')
+        else:
+            print('\033[7m{} {} coloca ele na mesa com vista pela janela e pergunta\no que voce quer para comer?\nele responde\033[m'.format(Sujeito, nome))
+            audio_player.play('queropova.mp3')
+            print('\033[7mdigite qualquer coisa para continuar\033[m')
+            input("")
+            print('\033[7m{} {} perqunta\nalgo para beber?\nele responde\033[m'.format(Sujeito, nome))
+            audio_player.play('cafe.mp3')
+            print('\033[7mdigite qualquer coisa para continuar\033[m')
+            input("")
+            print('\033[7mdepois dele ter se alimntando {} {} fala o valor da refeição\033[m'.format(Sujeito, nome))
+            audio_player.play('mil82.mp3')
+            print('\033[7mdigite qualquer coisa para continuar\033[m')
+            input("")
+            print('\033[7me ele responde so tenho\033[m')
+            audio_player.play('contos.mp3')
