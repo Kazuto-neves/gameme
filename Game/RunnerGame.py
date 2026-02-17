@@ -2,6 +2,12 @@ from Game.Ultils.audio_player import AudioPlayer
 from Game.Ultils.main_menu import menu
 
 def RunnerGame(library):
+    """
+    Main function to run the game.
+
+    Args:
+        library (str): The audio library to use (e.g., 'pygame').
+    """
     audio_player = AudioPlayer(library)
 
     print('\033[0;32mBem vindo ao gameme\033[m')

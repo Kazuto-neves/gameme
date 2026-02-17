@@ -1,6 +1,14 @@
 from Game.Ultils.Library_Text import STORY1_TEXTS, COMMON
 
 def Story(audio_player, nome, Sujeito):
+    """
+    Execute the storyline for Story 1.
+
+    Args:
+        audio_player (AudioPlayer): The audio player instance to play sounds.
+        nome (str): The name of the player.
+        Sujeito (str): The subject pronoun for the player.
+    """
     print(STORY1_TEXTS["intro"].format(Sujeito, nome))
     o1 = int(input(STORY1_TEXTS["choice1"]))
     if o1 == 1:
