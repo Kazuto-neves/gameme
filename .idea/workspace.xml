@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f44fa3-83c9-4025-8683-60d6cf026728" name="Changes" comment="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="a6f44fa3-83c9-4025-8683-60d6cf026728" name="Changes" comment="Update README.md with executable generation instructions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/RunnerGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/RunnerGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Stories/Story1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Stories/Story1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Ultils/Library_Text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Ultils/Library_Text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Ultils/audio_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Ultils/audio_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Ultils/main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Ultils/main_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +30,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="39" />
+    <option name="cachedIndexableFilesCount" value="312" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,10 +39,10 @@
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="39qLEEc0jdAk9GIZKz1G7y1orDP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Story1.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -93,13 +100,22 @@
       <option name="project" value="LOCAL" />
       <updated>1771424692038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update README.md with executable generation instructions">
+      <option name="closed" value="true" />
+      <created>1771425204234</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1771425204234</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project configuration files and rename main.py for better organization" />
     <MESSAGE value="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame" />
+    <MESSAGE value="Update README.md with executable generation instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md with executable generation instructions" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

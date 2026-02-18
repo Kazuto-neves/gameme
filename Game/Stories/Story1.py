@@ -20,8 +20,11 @@ def Story(audio_player, nome, Sujeito):
             audio_player.play('trolei.mp3')
         else:
             print(STORY1_TEXTS["choice1_1_1_2"].format(nome))
+            audio_player.play('miau-triste.mp3')
+        print(COMMON["game_over"])
     else:
         print(STORY1_TEXTS["choice1_2"].format(Sujeito, nome))
+        audio_player.play('forest-walking.mp3')
         o12 = int(input(STORY1_TEXTS["choice1_2_1"]))
         if o12 == 1:
             print(STORY1_TEXTS["choice1_2_1_1"].format(Sujeito, nome))

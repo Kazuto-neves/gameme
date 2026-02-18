@@ -1,24 +1,16 @@
-from Game.Ultils.audio_player import AudioPlayer
-from Game.Ultils.main_menu import menu
+from Game.Ultils.audio_player import AudioPlayer, PygameAudioLibrary
 
-def RunnerGame(library):
+def RunnerGame(menu_function, story_modules):
     """
     Main function to run the game.
-
-    Args:
-        library (str): The audio library to use (e.g., 'pygame').
     """
-    audio_player = AudioPlayer(library)
+    audio_library = PygameAudioLibrary()
+    audio_player = AudioPlayer(audio_library)
 
     print('\033[0;32mBem vindo ao gameme\033[m')
-    nome, sexo, Sujeito, pronome, story = menu()
-    match story:
-        case 1:
-            from Game.Stories.Story1 import Story
-            Story(audio_player, nome, Sujeito)
-        case 2:
-            from Game.Stories.Story2 import Story
-            Story(audio_player, nome, Sujeito)
-        case 3:
-            from Game.Stories.Story3 import Story
-            Story(audio_player, nome, Sujeito)
+    nome, sexo, Sujeito, pronome, story = menu_function()
+    
+    if story in story_modules:
+        story_modules[story](audio_player, nome, Sujeito)
+    else:
+        print("Invalid story selection.")

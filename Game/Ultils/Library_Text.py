@@ -13,8 +13,8 @@ STORY1_TEXTS = {
     "choice1": "\033[4;33mOque voce faz\n 1 vai embora e deixa a pessoa para la\n 2 vai ver se ela esta viva\n digite: \033[m",
     "choice1_1": "\033[7m{} {} ouviu o grito\033[m",
     "choice1_1_1": "\033[4;33mOque voce faz\n 1 volta e para onde esta a pessoa\n 2 vai embora\n digite: \033[m",
-    "choice1_1_1_1": "\033[7mFim de jogo\n {} foi trolado\033[m",
-    "choice1_1_1_2": "\033[7mFim de jogo\n {} não foi trolado\033[m",
+    "choice1_1_1_1": "\033[7m{} foi trolado\033[m",
+    "choice1_1_1_2": "\033[7m{} não foi trolado\033[m",
     "choice1_2": "\033[7m{} {} ve que ele esta acordando\n\033[m",
     "choice1_2_1": "\033[4;33mOque voce faz\n 1 pergunta se ele esta bem\n 2 rouba a carteira dele enquanto ele esta zonzo\n digite: \033[m",
     "choice1_2_1_1": "\033[7m{} {} pergunta se esta bem e ele responde\033[m",
@@ -117,7 +117,7 @@ STORY2_TEXTS = {
 # Story 3 Texts
 STORY3_TEXTS = {
     "intro": "\033[7m{} {} ve a chegada de um clinte que não parece ter muito dinheiro\n\033[m",
-    "choice3": "Oque voce faz\n 1 leva ele para uma mesa distante\n 2 coloca ele numa mesa com janela\n digite: \033[m",
+    "choice3": "\033[4;33mOque voce faz\n 1 leva ele para uma mesa distante\n 2 coloca ele numa mesa com janela\n digite: \033[m",
     "choice3_1": "\033[7m{} {} coloca ele na mesa distante e pergunta\no que voce quer para comer?\nele responde\n\033[m",
     "choice3_1_1": "\033[7m{} {} fica surpreso com o pedido mas anota mesmo assim\ndepois chega com o pedido\ndepois de comer voce fala quanto que custou\n\033[m",
     "choice3_1_2": "\033[7m{} {} fica mas surpreso ainda quando ele retira do seu boço um cartão e fala\n\033[m",

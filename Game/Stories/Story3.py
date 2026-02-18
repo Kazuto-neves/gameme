@@ -30,7 +30,7 @@ def Story(audio_player, nome, Sujeito):
         audio_player.play('cafe.mp3')
         input(COMMON["continue"])
         print(STORY3_TEXTS["choice3_2_2"].format(Sujeito, nome))
-        audio_player.play('mil82.mp3')
+        audio_player.play('mil8.mp3')
         input(COMMON["continue"])
         print(STORY3_TEXTS["choice3_2_3"].format(Sujeito, nome))
         audio_player.play('contos.mp3')
