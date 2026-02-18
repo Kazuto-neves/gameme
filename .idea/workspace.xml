@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f44fa3-83c9-4025-8683-60d6cf026728" name="Changes" comment="Update project configuration files and rename main.py for better organization">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Ultils/audio_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Ultils/audio_player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="a6f44fa3-83c9-4025-8683-60d6cf026728" name="Changes" comment="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1771423615610</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame">
+      <option name="closed" value="true" />
+      <created>1771424692038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771424692038</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project configuration files and rename main.py for better organization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project configuration files and rename main.py for better organization" />
+    <MESSAGE value="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor audio player to remove unused library support and simplify playback logic; update main.py to use only pygame" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
