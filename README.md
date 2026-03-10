@@ -17,3 +17,7 @@ __PRECISAMOS DE VOCÊ__
 - [ ] deixar um ambiante de facil entendimento
 
 ## no futuro tranformar esse projeto em um jogo mesmo com interface grafica e tudo
+
+## para gerar o execultavel do projeto basta usar o pyinstaller
+
+``` pyinstaller --name Gameme --add-data "Game:Game" --add-data "Game/audio:audio" main.py```
